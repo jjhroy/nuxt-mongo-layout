@@ -1,8 +1,11 @@
 {
   "name": "nuxt-mongo-layout",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "mongo layout",
-  "repository": "https://github.com/jjhroy/nuxt-mongo-nuxt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjhroy/nuxt-mongo-nuxt"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
