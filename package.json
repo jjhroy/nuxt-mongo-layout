@@ -1,8 +1,8 @@
 {
-  "name": "my-module",
+  "name": "nuxt-mongo-layout",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "description": "mongo layout",
+  "repository": "https://github.com/jjhroy/nuxt-mongo-nuxt",
   "license": "MIT",
   "type": "module",
   "exports": {
