@@ -6,10 +6,10 @@
 
 <script setup lang="ts">
 const changeTest = (theme: string) => {
-  console.log("change test", theme);
-};
+  console.log('change test', theme)
+}
 </script>
 
-<style>
+<!-- <style>
 @import url("../src//assets/global.scss");
-</style>
+</style> -->
