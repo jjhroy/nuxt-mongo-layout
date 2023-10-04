@@ -1,10 +1,10 @@
 {
   "name": "nuxt-mongo-layout",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "mongo layout",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jjhroy/nuxt-mongo-nuxt"
+    "url": "git+https://github.com/jjhroy/nuxt-mongo-layout"
   },
   "license": "MIT",
   "type": "module",
@@ -34,12 +34,12 @@
     "@nuxt/kit": "^3.7.4"
   },
   "devDependencies": {
-    "@types/node": "^18.18.1",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.2",
     "@nuxt/schema": "^3.7.4",
     "@nuxt/test-utils": "^3.7.4",
+    "@types/node": "^18.18.1",
     "changelogen": "^0.5.5",
     "eslint": "^8.50.0",
     "nuxt": "^3.7.4",
