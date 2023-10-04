@@ -1,6 +1,6 @@
 {
   "name": "nuxt-mongo-layout",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "mongo layout",
   "repository": {
     "type": "git",
@@ -28,7 +28,9 @@
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "upload": "npm publish --registry https://registry.npmjs.org",
+    "upload:auto": "node release.js && npm publish --registry https://registry.npmjs.org"
   },
   "dependencies": {
     "@nuxt/kit": "^3.7.4"
