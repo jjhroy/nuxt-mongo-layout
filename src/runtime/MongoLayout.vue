@@ -5,7 +5,7 @@
       :navigation-list="header ?? []"
       @submit-change="changeTheme"
     />
-    <main>
+    <main class="mongo-main">
       <slot />
     </main>
     <Footer class="mongo-footer" />
@@ -28,15 +28,15 @@ const { data } = await useFetch<IMongoLayout>(
 )
 // @ts-ignore
 const header = computed(() => data.value?.header.nav_list)
-useHead({
-  link: [
-    {
-      rel: 'stylesheet',
-      type: 'text/css',
-      href: 'https://img.linkstarted.top/public/global.css',
-    },
-  ],
-})
+// useHead({
+//   link: [
+//     {
+//       rel: 'stylesheet',
+//       type: 'text/css',
+//       href: 'https://img.linkstarted.top/public/global.css',
+//     },
+//   ],
+// })
 const emit = defineEmits(['submitChange'])
 const changeTheme = (theme: string) => {
   emit('submitChange', theme)

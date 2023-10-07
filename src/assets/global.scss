@@ -85,6 +85,12 @@ a {
       }
     }
   }
+  .mongo-main {
+    display: flex;
+    flex-direction: column;
+    background: #f6f6f6;
+    flex-grow: 1;
+  }
   .mongo-footer {
     display: flex;
     flex-direction: column;
@@ -111,6 +117,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.06);
     .side-tool-divider {
       background: #1a1a1a;
       opacity: 0.3;

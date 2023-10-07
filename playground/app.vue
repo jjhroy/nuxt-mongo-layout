@@ -10,6 +10,6 @@ const changeTest = (theme: string) => {
 }
 </script>
 
-<!-- <style>
-@import url("../src//assets/global.scss");
-</style> -->
+<style>
+@import url('../src//assets/global.scss');
+</style>
