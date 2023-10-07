@@ -31,6 +31,10 @@ a {
 .mongo-layout .mongo-header a:hover {
   color: #1a1a1a;
 }
+.mongo-layout .mongo-header .header-logo {
+  font-size: 18px;
+  line-height: 18px;
+}
 .mongo-layout .mongo-header .header-theme-btn {
   cursor: pointer;
   width: 1.5rem;
@@ -52,6 +56,8 @@ a {
 }
 .mongo-layout .mongo-header .header-nav-list .header-nav-item {
   display: block;
+  font-size: 16px;
+  line-height: 16px;
   height: 52px;
   line-height: 52px;
   width: max-content;
