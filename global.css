@@ -119,8 +119,8 @@ a {
   border-radius: 4px;
 }
 .mongo-layout .mongo-side-tool .side-tool-item {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   padding: 6px;
   cursor: pointer;
   background: #fff;
