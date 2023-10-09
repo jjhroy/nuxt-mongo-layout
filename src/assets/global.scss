@@ -21,6 +21,12 @@ a {
     align-items: center;
     background: #fff;
     box-shadow: 0 1px 8px #0000001a;
+    &.dark {
+      a {
+        color: #fff !important;
+      }
+      background: #1a1a1a !important;
+    }
     a {
       color: #888;
       font-size: 18px;

@@ -1,6 +1,6 @@
 <template>
-  <MongoLayout @submit-change="changeTest">
-    <div>Nuxt module playground!</div>
+  <MongoLayout :nav-list="navList" @submit-change="changeTest">
+    <NuxtPage />
   </MongoLayout>
 </template>
 
@@ -8,8 +8,26 @@
 const changeTest = (theme: string) => {
   console.log('change test', theme)
 }
+const navList = [
+  {
+    name: 'Blog',
+    path: '/blog',
+  },
+  {
+    name: 'Navigation',
+    path: '/navigation',
+  },
+  {
+    name: 'Gallery',
+    path: '/gallery',
+  },
+  {
+    name: 'About',
+    path: '/about',
+  },
+  {
+    name: 'Cloud',
+    path: '/cloud',
+  },
+]
 </script>
-
-<style>
-@import url('../src/assets/global.scss');
-</style>

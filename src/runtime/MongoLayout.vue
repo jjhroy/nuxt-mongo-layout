@@ -2,7 +2,8 @@
   <div class="mongo-layout">
     <Header
       class="mongo-header"
-      :navigation-list="header ?? []"
+      :class="{ dark: layoutTheme === 'dark' }"
+      :navigation-list="header"
       @submit-change="changeTheme"
     />
     <main class="mongo-main">
@@ -12,33 +13,30 @@
     <SideTool class="mongo-side-tool" />
   </div>
 </template>
+
 <script setup lang="ts">
 import SideTool from './components/layout/SideTool.vue'
 import Footer from './components/layout/Footer.vue'
 import Header from './components/layout/Header.vue'
-import { useHead, useFetch, computed } from '#imports'
-import { IMongoLayout } from '../interface/global'
+import { ref } from 'vue'
+import { IHeaderNavItem } from '../interface/global'
 
-const { data } = await useFetch<IMongoLayout>(
-  'https://img.linkstarted.top/public/data.json',
-  {
-    method: 'GET',
-    key: 'cdn_config',
-  },
-)
-// @ts-ignore
-const header = computed(() => data.value?.header.nav_list)
-useHead({
-  link: [
-    {
-      rel: 'stylesheet',
-      type: 'text/css',
-      href: 'https://img.linkstarted.top/public/global.css',
-    },
-  ],
-})
+const props = defineProps<{
+  /**
+   * 导航信息数组
+   */
+  navList: IHeaderNavItem[]
+}>()
+const layoutTheme = ref('light')
+const header = ref<IHeaderNavItem[]>(props.navList ?? [])
+// 暴露主题转换
 const emit = defineEmits(['submitChange'])
 const changeTheme = (theme: string) => {
+  layoutTheme.value = theme
   emit('submitChange', theme)
 }
 </script>
+
+<style>
+@import url('../assets/global.scss');
+</style>
