@@ -14,7 +14,7 @@ echo "🚠 布局 scss 文件编译完成"
 echo "🚅 上传新的布局 css 到七牛云"
 qshell fput mongoblog public/global.css ./global.css --overwrite
 echo "🚄 css 文件上传成功"
-把组件代码推送远程仓库
+# 把组件代码推送远程仓库
 echo "✈️ 开始组件 git 推送"
 git add .
 echo "🛫 执行 git 提交"
