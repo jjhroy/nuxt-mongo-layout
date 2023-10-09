@@ -31,3 +31,7 @@ const navList = [
   },
 ]
 </script>
+
+<style>
+@import url('../src/assets/global.scss');
+</style>

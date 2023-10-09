@@ -38,5 +38,5 @@ const changeTheme = (theme: string) => {
 </script>
 
 <style>
-@import url('./assets/global.css');
+@import url('./global.css');
 </style>
