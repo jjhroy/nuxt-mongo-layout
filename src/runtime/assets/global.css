@@ -21,6 +21,12 @@ a {
   background: #fff;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1019607843);
 }
+.mongo-layout .mongo-header.dark {
+  background: #1a1a1a !important;
+}
+.mongo-layout .mongo-header.dark a {
+  color: #fff !important;
+}
 .mongo-layout .mongo-header a {
   color: #888;
   font-size: 18px;

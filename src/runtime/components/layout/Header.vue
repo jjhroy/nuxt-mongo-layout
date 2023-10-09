@@ -48,3 +48,4 @@ const changeTheme = (type: string) => {
   emit('submitChange', type)
 }
 </script>
+~/src/runtime/interface/global

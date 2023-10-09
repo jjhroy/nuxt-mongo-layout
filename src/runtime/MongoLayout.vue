@@ -19,7 +19,7 @@ import SideTool from './components/layout/SideTool.vue'
 import Footer from './components/layout/Footer.vue'
 import Header from './components/layout/Header.vue'
 import { ref } from 'vue'
-import { IHeaderNavItem } from '../interface/global'
+import { IHeaderNavItem } from './interface/global'
 
 const props = defineProps<{
   /**
@@ -38,5 +38,5 @@ const changeTheme = (theme: string) => {
 </script>
 
 <style>
-@import url('../assets/global.scss');
+@import url('./assets/global.css');
 </style>

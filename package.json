@@ -1,6 +1,6 @@
 {
   "name": "nuxt-mongo-layout",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "mongo layout",
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "test:watch": "vitest watch",
     "upload": "npm publish --registry https://registry.npmjs.org",
     "upload:auto": "sh update-auto.sh",
-    "pack:css": "npx sass src/assets/global.scss global.css --no-source-map"
+    "pack:css": "npx sass src/runtime/assets/global.scss src/runtime/assets/global.css --no-source-map"
   },
   "dependencies": {
     "@nuxt/kit": "^3.7.4"
