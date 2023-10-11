@@ -48,9 +48,6 @@ a {
   flex-shrink: 0;
   padding-left: 12px;
 }
-.mongo-layout .mongo-header .header-theme-btn:hover svg {
-  animation: spin 1s linear infinite;
-}
 .mongo-layout .mongo-header .header-menu-btn {
   display: none;
   width: 1.5rem;
@@ -225,14 +222,6 @@ a {
   }
   100% {
     width: 98%;
-  }
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
 @keyframes show-wx-box {

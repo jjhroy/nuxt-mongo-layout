@@ -47,11 +47,6 @@ a {
       height: 1.5rem;
       flex-shrink: 0;
       padding-left: 12px;
-      &:hover {
-        svg {
-          animation: spin 1s linear infinite;
-        }
-      }
     }
     .header-menu-btn {
       display: none;
@@ -241,14 +236,6 @@ a {
   }
   100% {
     width: 98%;
-  }
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
 @keyframes show-wx-box {
