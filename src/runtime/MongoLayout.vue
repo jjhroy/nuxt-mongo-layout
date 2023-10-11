@@ -4,10 +4,12 @@
       class="mongo-header"
       :class="{ dark: layoutTheme === 'dark' }"
       :navigation-list="header"
-      @submit-change="changeTheme"
     >
       <template #logo>
         <slot name="logo" />
+      </template>
+      <template #theme>
+        <slot name="theme" />
       </template>
     </Header>
     <main class="mongo-main">
@@ -37,12 +39,6 @@ const props = defineProps<{
 }>()
 const layoutTheme = ref('light')
 const header = ref<IHeaderNavItem[]>(props.navList ?? [])
-// 暴露主题转换
-const emit = defineEmits(['submitChange'])
-const changeTheme = (theme: string) => {
-  layoutTheme.value = theme
-  emit('submitChange', theme)
-}
 </script>
 
 <style>

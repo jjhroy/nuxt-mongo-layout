@@ -24,8 +24,7 @@
       </NuxtLink>
     </nav>
     <div class="header-theme-btn">
-      <Sun v-if="theme === 'light'" @click="changeTheme('dark')" />
-      <Moon v-else @click="changeTheme('light')" />
+      <slot name="theme" />
     </div>
   </header>
 </template>
