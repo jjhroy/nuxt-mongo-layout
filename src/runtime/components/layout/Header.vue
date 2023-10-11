@@ -9,8 +9,9 @@
       to="/"
       :class="{ focus: currentRoute === '/' }"
     >
-      🥭Bochi
+      <slot name="logo" />
     </NuxtLink>
+
     <nav class="header-nav-list" :class="{ active: showDrawer }">
       <NuxtLink
         v-for="{ name, path } in navigationList"

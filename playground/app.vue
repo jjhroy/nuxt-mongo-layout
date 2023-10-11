@@ -1,6 +1,15 @@
 <template>
   <MongoLayout :nav-list="navList" @submit-change="changeTest">
-    <NuxtPage />
+    <template #logo> 🥭&nbsp; Mongo </template>
+    <template #main>
+      <NuxtPage />
+    </template>
+    <template #footer>
+      <span>Copyright © 2021-PRESENT ROY</span>
+      <a href="http://beian.miit.gov.cn/" target="_blank">
+        闽ICP备2022016505号
+      </a>
+    </template>
   </MongoLayout>
 </template>
 
