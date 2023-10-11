@@ -42,5 +42,5 @@ const navList = [
 </script>
 
 <style>
-@import url('../src/assets/global.scss');
+@import url('../src/assets/layout.scss');
 </style>

@@ -46,5 +46,5 @@ const changeTheme = (theme: string) => {
 </script>
 
 <style>
-@import url('./global.css');
+@import url('./layout.css');
 </style>
