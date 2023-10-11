@@ -1,3 +1,11 @@
+# 把新的 css 文件上传到cdn
+echo "🚟 把最新的布局 scss 文件为 css 文件"
+npx sass src/assets/layout.scss src/runtime/layout.css --no-source-map
+echo "🚠 布局 scss 文件编译完成"
+echo "🚅 上传新的布局 css 到七牛云"
+qshell fput mongoblog public/layout.css src/runtime/layout.css --overwrite
+echo "🚄 css 文件上传成功"
+
 # 把组件的新版本发布到 npm 上
 echo "🛸 开始执行组件自动升级和推送脚本"
 node release.js
@@ -7,13 +15,7 @@ echo "🚀 package.json 美化完成"
 echo "🚁 开始 npm 发布新版本"
 npm publish --registry https://registry.npmjs.org
 echo "🛩️ npm 发布新版本成功"
-# 把新的 css 文件上传到cdn
-echo "🚟 把最新的布局 scss 文件为 css 文件"
-npx sass src/assets/layout.scss src/runtime/layout.css --no-source-map
-echo "🚠 布局 scss 文件编译完成"
-echo "🚅 上传新的布局 css 到七牛云"
-qshell fput mongoblog public/layout.css src/runtime/layout.css --overwrite
-echo "🚄 css 文件上传成功"
+
 # 把组件代码推送远程仓库
 echo "✈️ 开始组件 git 推送"
 git add .
