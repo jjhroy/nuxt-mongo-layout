@@ -22,22 +22,22 @@ const navList = [
     name: 'Blog',
     path: '/blog',
   },
-  {
-    name: 'Navigation',
-    path: '/navigation',
-  },
-  {
-    name: 'Gallery',
-    path: '/gallery',
-  },
-  {
-    name: 'About',
-    path: '/about',
-  },
-  {
-    name: 'Cloud',
-    path: '/cloud',
-  },
+  // {
+  //   name: 'Navigation',
+  //   path: '/navigation',
+  // },
+  // {
+  //   name: 'Gallery',
+  //   path: '/gallery',
+  // },
+  // {
+  //   name: 'About',
+  //   path: '/about',
+  // },
+  // {
+  //   name: 'Cloud',
+  //   path: '/cloud',
+  // },
 ]
 </script>
 

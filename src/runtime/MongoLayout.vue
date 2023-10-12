@@ -29,7 +29,7 @@ import SideTool from './components/layout/SideTool.vue'
 import Footer from './components/layout/Footer.vue'
 import Header from './components/layout/Header.vue'
 import { ref } from 'vue'
-import { IHeaderNavItem } from './interface/global.ts'
+import { IHeaderNavItem } from './interface/global'
 
 const props = defineProps<{
   /**
